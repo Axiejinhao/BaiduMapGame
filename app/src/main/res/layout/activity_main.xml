@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/k1"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center"
+        android:text="可莉大冒险"
+        android:textStyle="bold"
+        android:textSize="35sp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/sum_jifen"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:hint="当前积分 "
+            android:textStyle="bold"
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:id="@+id/sum_tili"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:hint="可用体力 "
+            android:textStyle="bold"
+            android:textSize="20sp"
+            />
+
+        <Button
+            android:id="@+id/get_item"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:text="Get"
+            android:textSize="8sp"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/playgame"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="开始游戏 进入地图"
+        android:textSize="30sp"
+        android:background="@drawable/button_style"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:id="@+id/create"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/button_style"
+            android:text="生成二维码"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:id="@+id/scan"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/button_style"
+            android:text="扫描二维码"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/shop"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="进入商城"
+        android:textSize="30sp"
+        android:background="@drawable/button_style"
+        />
+
+
+
+</LinearLayout>
